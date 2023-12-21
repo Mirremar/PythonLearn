@@ -9,3 +9,5 @@ for _ in range(offset):
     temp = nubmers.pop()
     nubmers.insert(0,temp)
 print(nubmers)
+#Или можно решить так
+print(nubmers[-offset:] + nubmers[:-offset])
