@@ -1,12 +1,10 @@
-l = []
-x,y = 3,3
-for i in range(1,y+1):
-    temp = []
-    for j in range(1,y+1):
-        temp.append(i*j)
-    l.append(temp)
+#Вывести элементы,которые есть в первом массиве,но которых нет во втором
 
-for i in l:
-    for j in i:
-        print(j,end=' ')
-    print()
+import random
+
+list_1 = [random.randint(0,20) for i in range(20)]
+print(list_1)
+list_2 = [random.randint(0,20) for i in range(20)]
+print(list_2)
+res = list(filter(lambda x:x not in list_2,list_1))
+print(res)
